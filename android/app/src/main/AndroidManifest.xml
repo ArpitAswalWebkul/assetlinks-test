@@ -28,9 +28,15 @@
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="http" android:host="example.com" />
-<!--                Replace example.com with your own web domain.-->
-                <data android:scheme="https" />
+                <!-- HTTP -->
+                <data android:scheme="http"
+                    android:host="ArpitAswalWebkul.github.io"
+                    android:pathPrefix="/assetlinks-test" />
+
+                <!-- HTTPS -->
+                <data android:scheme="https"
+                    android:host="arpitaswalwebkul.github.io"
+                    android:pathPrefix="/assetlinks-test" />
             </intent-filter>
 <!--        If you use a Flutter version earlier than 3.27, you need to manually opt in to deep linking by adding the following metadata tag to <activity>:-->
 <!--        <meta-data android:name="flutter_deeplinking_enabled" android:value="true" />-->
